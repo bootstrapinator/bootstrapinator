@@ -1,4 +1,4 @@
-// Custom 
+  // Custom 
 
 body {
   background: url('../img/pure/texture-light.png') !important;
@@ -72,11 +72,7 @@ body {
 .btn:hover {
   color: @grayDarker;
   text-decoration: none;
-  background-color: darken(@white, 10%);
-
-  // transition is only when going to hover, otherwise the background
-  // behind the gradient (there for IE<=9 fallback) gets mismatched
-  .transition(background-position .1s linear);
+  background: url(../img/pure/noise.png), -webkit-linear-gradient(top, lighten(@white,10%), darken(@white,15%));
 }
 
 // Focus state for keyboard and accessibility
@@ -99,7 +95,7 @@ body {
 .btn.disabled,
 .btn[disabled] {
   cursor: default;
-  .opacity(95);
+  .opacity(85);
 }
 
 
@@ -181,6 +177,10 @@ body {
   background: url(../img/pure/noise.png), linear-gradient(top, lighten(@linkColor,5%), darken(@linkColor,10%));
   border: 1px solid darken(@linkColor, 18%);
 
+  &:hover {
+    text-decoration: none;
+    background: url(../img/pure/noise.png), -webkit-linear-gradient(top, lighten(@linkColor,10%), darken(@linkColor,15%));
+  }
 }
 // Warning appears are orange
 .btn-warning {
@@ -190,6 +190,11 @@ body {
   background: url(../img/pure/noise.png), -ms-linear-gradient(top, lighten(@orange,5%), darken(@orange,10%));
   background: url(../img/pure/noise.png), linear-gradient(top, lighten(@orange,5%), darken(@orange,10%));
   border: 1px solid darken(@orange, 18%);
+
+  &:hover {
+    text-decoration: none;
+    background: url(../img/pure/noise.png), -webkit-linear-gradient(top, lighten(@orange,10%), darken(@orange,15%));
+  }
 }
 // Danger and error appear as red
 .btn-danger {
@@ -199,6 +204,11 @@ body {
   background: url(../img/pure/noise.png), -ms-linear-gradient(top, lighten(@red,5%), darken(@red,10%));
   background: url(../img/pure/noise.png), linear-gradient(top, lighten(@red,5%), darken(@red,10%));
   border: 1px solid darken(@red, 18%);
+
+  &:hover {
+    text-decoration: none;
+    background: url(../img/pure/noise.png), -webkit-linear-gradient(top, lighten(@red,10%), darken(@red,15%));
+  }
 }
 // Success appears as green
 .btn-success {
@@ -208,6 +218,11 @@ body {
   background: url(../img/pure/noise.png), -ms-linear-gradient(top, lighten(@green,5%), darken(@green,10%));
   background: url(../img/pure/noise.png), linear-gradient(top, lighten(@green,5%), darken(@green,10%));
   border: 1px solid darken(@green, 18%);
+
+  &:hover {
+    text-decoration: none;
+    background: url(../img/pure/noise.png), -webkit-linear-gradient(top, lighten(@green,10%), darken(@green,15%));
+  }
 }
 // Info appears as a neutral blue
 .btn-info {
@@ -217,6 +232,11 @@ body {
   background: url(../img/pure/noise.png), -ms-linear-gradient(top, lighten(@blue,5%), darken(@blue,10%));
   background: url(../img/pure/noise.png), linear-gradient(top, lighten(@blue,5%), darken(@blue,10%));
   border: 1px solid darken(@blue, 18%);
+
+  &:hover {
+    text-decoration: none;
+    background: url(../img/pure/noise.png), -webkit-linear-gradient(top, lighten(@blue,10%), darken(@blue,15%));
+  }
 }
 // Inverse appears as dark gray
 .btn-inverse {
@@ -226,6 +246,11 @@ body {
   background: url(../img/pure/noise.png), -ms-linear-gradient(top, lighten(@grayDark,5%), darken(@grayDark,10%));
   background: url(../img/pure/noise.png), linear-gradient(top, lighten(@grayDark,5%), darken(@grayDark,10%));
   border: 1px solid darken(@grayDark, 18%);
+
+  &:hover {
+    text-decoration: none;
+    background: url(../img/pure/noise.png), -webkit-linear-gradient(top, lighten(@grayDark,10%), darken(@grayDark,15%));
+  }
 }
 
 

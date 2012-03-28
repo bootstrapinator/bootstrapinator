@@ -4190,12 +4190,7 @@ body .subnav-fixed {
 .btn:hover {
   color: #222222;
   text-decoration: none;
-  background-color: #e6e6e6;
-  -webkit-transition: background-position 0.1s linear;
-  -moz-transition: background-position 0.1s linear;
-  -ms-transition: background-position 0.1s linear;
-  -o-transition: background-position 0.1s linear;
-  transition: background-position 0.1s linear;
+  background: url(../img/pure/noise.png), -webkit-linear-gradient(top, #ffffff, #d9d9d9);
 }
 .btn:focus {
   outline: thin dotted #333;
@@ -4215,8 +4210,8 @@ body .subnav-fixed {
 .btn.disabled,
 .btn[disabled] {
   cursor: default;
-  opacity: 0.95;
-  filter: alpha(opacity=95);
+  opacity: 0.85;
+  filter: alpha(opacity=85);
 }
 .btn-large {
   padding: 9px 14px;
@@ -4278,6 +4273,10 @@ body .subnav-fixed {
   background: url(../img/pure/noise.png), linear-gradient(top, #0081eb, #00579f);
   border: 1px solid #004176;
 }
+.btn-primary:hover {
+  text-decoration: none;
+  background: url(../img/pure/noise.png), -webkit-linear-gradient(top, #068eff, #004985);
+}
 .btn-warning {
   background: url(../img/pure/noise.png), -webkit-linear-gradient(top, #fa9f1e, #c67605);
   background: url(../img/pure/noise.png), -moz-linear-gradient(top, #fa9f1e, #c67605);
@@ -4285,6 +4284,10 @@ body .subnav-fixed {
   background: url(../img/pure/noise.png), -ms-linear-gradient(top, #fa9f1e, #c67605);
   background: url(../img/pure/noise.png), linear-gradient(top, #fa9f1e, #c67605);
   border: 1px solid #9e5f04;
+}
+.btn-warning:hover {
+  text-decoration: none;
+  background: url(../img/pure/noise.png), -webkit-linear-gradient(top, #faa937, #ad6704);
 }
 .btn-danger {
   background: url(../img/pure/noise.png), -webkit-linear-gradient(top, #df583f, #b3361e);
@@ -4294,6 +4297,10 @@ body .subnav-fixed {
   background: url(../img/pure/noise.png), linear-gradient(top, #df583f, #b3361e);
   border: 1px solid #902b18;
 }
+.btn-danger:hover {
+  text-decoration: none;
+  background: url(../img/pure/noise.png), -webkit-linear-gradient(top, #e26b55, #9d2f1a);
+}
 .btn-success {
   background: url(../img/pure/noise.png), -webkit-linear-gradient(top, #97c85c, #71a236);
   background: url(../img/pure/noise.png), -moz-linear-gradient(top, #97c85c, #71a236);
@@ -4301,6 +4308,10 @@ body .subnav-fixed {
   background: url(../img/pure/noise.png), -ms-linear-gradient(top, #97c85c, #71a236);
   background: url(../img/pure/noise.png), linear-gradient(top, #97c85c, #71a236);
   border: 1px solid #5c832c;
+}
+.btn-success:hover {
+  text-decoration: none;
+  background: url(../img/pure/noise.png), -webkit-linear-gradient(top, #a3cf6f, #648f30);
 }
 .btn-info {
   background: url(../img/pure/noise.png), -webkit-linear-gradient(top, #0081eb, #00579f);
@@ -4310,6 +4321,10 @@ body .subnav-fixed {
   background: url(../img/pure/noise.png), linear-gradient(top, #0081eb, #00579f);
   border: 1px solid #004176;
 }
+.btn-info:hover {
+  text-decoration: none;
+  background: url(../img/pure/noise.png), -webkit-linear-gradient(top, #068eff, #004985);
+}
 .btn-inverse {
   background: url(../img/pure/noise.png), -webkit-linear-gradient(top, #404040, #1a1a1a);
   background: url(../img/pure/noise.png), -moz-linear-gradient(top, #404040, #1a1a1a);
@@ -4317,6 +4332,10 @@ body .subnav-fixed {
   background: url(../img/pure/noise.png), -ms-linear-gradient(top, #404040, #1a1a1a);
   background: url(../img/pure/noise.png), linear-gradient(top, #404040, #1a1a1a);
   border: 1px solid #050505;
+}
+.btn-inverse:hover {
+  text-decoration: none;
+  background: url(../img/pure/noise.png), -webkit-linear-gradient(top, #4d4d4d, #0d0d0d);
 }
 button.btn,
 input[type="submit"].btn {
