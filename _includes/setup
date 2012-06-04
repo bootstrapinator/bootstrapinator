@@ -1,0 +1,2 @@
+{% assign BASE_PATH = site.inator.BASE_PATH %}
+{% capture ASSET_PATH %}{{ BASE_PATH }}/assets/{% endcapture %}
