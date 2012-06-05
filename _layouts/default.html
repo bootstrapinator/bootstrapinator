@@ -1,6 +1,7 @@
 ---
 author: bootstrapinator
 ---
+{% include setup %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,8 +31,10 @@ author: bootstrapinator
   </head>
 
   <body>
-    <h1>LOGO</h1>
-    <span>One-liner of awesomeness.</span>
+    <h1>
+      <a href="{{ BASE_PATH }}">Bootstrapinator</a>
+    </h1>
+    <p>Easily apply open source themes to your bootstrap app so it doesn't look like every other bootstrap app.</p>
     {{ content }}
   </body>
 </html>
