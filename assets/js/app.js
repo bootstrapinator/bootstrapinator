@@ -6,6 +6,8 @@ $(function(){
     cursor: 'col-resize',
     dividerColor: '#f15738',
     enableKeyboard: true,
-    keypressAmount: 50
+    keypressAmount: 50,
+    beforeLinkText: "Bootstrap",
+    afterLinkText: "BoostrapINATOR"
   });
 });
