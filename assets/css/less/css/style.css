@@ -139,7 +139,7 @@ body {
   font-size: 13px;
   line-height: 18px;
   color: #333333;
-  background-color: rgba(146, 176, 168, 0.27);
+  background-color: red;
   border-top: 5px solid #f15738;
 }
 a {
