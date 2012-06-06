@@ -1,0 +1,53 @@
+#hero-comparison img {
+    max-width: none;
+}
+
+div.switch {
+    position: relative;
+    width: 960px;
+    height: 345px;
+    margin: 30px;
+    border: 1px solid #aaa;
+}
+
+.image.front, .image.behind {
+    position: absolute;
+    top: 0;
+    max-width: none !important;
+}
+
+.image.front {
+    overflow: hidden;
+    width: 480px;
+}
+
+.swiper {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 480px;
+    border-right: 1px solid rgba( 255,255,255,0.3);
+    border-left: 1px solid rgba( 0,0,0,0.3);
+    z-index: 1000;
+}
+
+.handle {
+    width: 12px;
+    height: 12px;
+    background: #ddd;
+    border: 1px solid #aaa;
+    position: absolute;
+    left: -6px;
+    cursor: col-resize;
+    border-radius: 6px;
+    z-index: 1100;
+}
+
+.handle.top{
+    top: -10px;
+}
+
+.handle.bottom{
+    bottom: -10px;
+}
+​

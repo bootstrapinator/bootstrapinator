@@ -34,10 +34,23 @@ author: bootstrapinator
   </head>
 
   <body>
-    <h1>
-      <a href="{{ BASE_PATH }}">Bootstrapinator</a>
-    </h1>
-    <p>Easily apply open source themes to your bootstrap app so it doesn't look like every other bootstrap app.</p>
+    
+    <div class="container">
+      <div class="row vertical-space">
+        <div class="span3">
+          <h1>
+            <a href="{{ BASE_PATH }}">
+              <img src="assets/img/logo.png" alt="Bootstrapinator">
+            </a>
+          </h1>
+        </div>
+        <div class="span9">
+          <h2>Easily apply open source themes to your bootstrap app so it doesn't look like every other bootstrap app.</h2>
+        </div>
+      </div>
+    </div>
+
     {{ content }}
+
   </body>
 </html>
