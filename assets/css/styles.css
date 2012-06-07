@@ -140,7 +140,8 @@ body {
   line-height: 18px;
   color: #333333;
   background-color: rgba(146, 176, 168, 0.27);
-  border-top: 5px solid #f15738;
+  background-image: url(../img/bg_pattern.png);
+  border-top: 3px solid #f15738;
 }
 a {
   color: #0088cc;
@@ -627,7 +628,7 @@ div.switch {
 .handle.bottom {
   bottom: -10px;
 }
-img.logo {
+#masthead img.logo {
   transition: all 0.5s;
   -moz-transition: all 0.5s;
   /* Firefox 4 */
