@@ -23,6 +23,27 @@
   }
 }
 
+// Made by
+
+.madeBy {
+  img {
+    opacity: 0.75;
+    -moz-opacity: 0.75;
+    filter:alpha(opacity=75);
+
+    transition: all 0.5s;
+    -moz-transition: all 0.5s; /* Firefox 4 */
+    -webkit-transition: all 0.5s; /* Safari and Chrome */
+    -o-transition: all 0.5s; /* Opera */
+
+    &:hover, &:active {
+      opacity: 1;
+      -moz-opacity: 1;
+      filter:alpha(opacity=1);
+    }
+  }
+}
+
 // space adjustments
 
 .top-space {
