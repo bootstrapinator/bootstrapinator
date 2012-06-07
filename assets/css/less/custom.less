@@ -1,4 +1,35 @@
+//  General
+// -------------------------------------
+
+.btn {
+  display: inline-block;
+  padding: 4px 10px 4px;
+  margin-bottom: 0; // For input.btn
+  font-size: @baseFontSize;
+  font-family: DroidSansRegular;
+  line-height: @baseLineHeight;
+  color: @white;
+  text-align: center;
+  vertical-align: middle;
+  .buttonBackground(@orange, darken(@orange, 10%));
+  border: 1px solid darken(@orange, 20%);
+  .border-radius(3px);
+  cursor: pointer;
+
+  // Give IE7 some love
+  .reset-filter();
+  .ie7-restore-left-whitespace();
+
+  &:hover {
+    text-decoration: none;
+    color: darken(@white, 5%);
+    .buttonBackground(darken(@orange, 8%), darken(@orange, 18%));
+  }
+}
+
 //  masthead
+// -------------------------------------
+
 #masthead {
   border-bottom: 35px solid #3c3d3c;
   margin: 0 0 32px 0;
@@ -24,6 +55,7 @@
 }
 
 // Made by
+// -------------------------------------
 
 .madeBy {
   img {
@@ -44,7 +76,51 @@
   }
 }
 
+// Home page feature wells
+// -------------------------------------
+
+.features {
+  
+  .well {
+    min-height: 180px;   
+  }
+}
+
+// Home page themes section
+// -------------------------------------
+
+.themes {
+  .span3 {
+    text-align: center;
+  }
+
+  img {
+    -moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.45);
+
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  a.btn {
+    display: inline-block;
+    margin: 5px 0 3px 0;
+  }
+}
+
+// Coming Soon
+// -------------------------------------
+
+.coming-soon {
+  opacity: 0.6;
+  -moz-opacity: 0.6;
+  filter:alpha(opacity=6);
+}
+
+
 // space adjustments
+// -------------------------------------
 
 .top-space {
   padding-top: 16px;
