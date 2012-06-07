@@ -838,6 +838,9 @@ div.switch {
   -moz-opacity: 0.6;
   filter: alpha(opacity=6);
 }
+footer {
+  color: #808080;
+}
 .top-space {
   padding-top: 16px;
 }
