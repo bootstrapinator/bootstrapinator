@@ -791,9 +791,10 @@ div.switch {
   padding: 26px 0 0 0;
 }
 .madeBy img {
-  opacity: 0.75;
-  -moz-opacity: 0.75;
-  filter: alpha(opacity=75);
+  width: 125px;
+  opacity: 0.95;
+  -moz-opacity: 0.95;
+  filter: alpha(opacity=95);
   transition: all 0.5s;
   -moz-transition: all 0.5s;
   /* Firefox 4 */
@@ -810,6 +811,10 @@ div.switch {
   opacity: 1;
   -moz-opacity: 1;
   filter: alpha(opacity=1);
+}
+.madeBy ul {
+  list-style: none;
+  margin: 0 0 0 0;
 }
 .features .well {
   min-height: 180px;
