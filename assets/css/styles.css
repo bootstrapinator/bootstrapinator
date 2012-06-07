@@ -365,7 +365,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: inherit;
+  font-family: 'PatuaOneRegular', Arial, sans-serif;
   font-weight: bold;
   color: inherit;
   text-rendering: optimizelegibility;
@@ -549,6 +549,13 @@ small {
 cite {
   font-style: normal;
 }
+@font-face {
+  font-family: 'PatuaOneRegular';
+  src: url('../fonts/patua-one/PatuaOne-Regular-webfont.eot');
+  src: url('../fonts/patua-one/PatuaOne-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/patua-one/PatuaOne-Regular-webfont.woff') format('woff'), url('../fonts/patua-one/PatuaOne-Regular-webfont.ttf') format('truetype'), url('../fonts/patua-one/PatuaOne-Regular-webfont.svg#PatuaOneRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .well {
   min-height: 20px;
   padding: 19px;
@@ -628,7 +635,14 @@ div.switch {
 .handle.bottom {
   bottom: -10px;
 }
+#masthead {
+  border-bottom: 35px solid #3c3d3c;
+  margin: 0 0 32px 0;
+  height: 149px;
+}
 #masthead img.logo {
+  position: relative;
+  top: 1px;
   transition: all 0.5s;
   -moz-transition: all 0.5s;
   /* Firefox 4 */
@@ -639,6 +653,9 @@ div.switch {
   -o-transition: all 0.5s;
   /* Opera */
 
+}
+#masthead h2 {
+  padding: 26px 0 0 0;
 }
 .top-space {
   padding-top: 16px;
