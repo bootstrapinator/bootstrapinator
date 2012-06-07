@@ -627,17 +627,10 @@ div.switch {
 .handle.bottom {
   bottom: -10px;
 }
-img.logo {
-  transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  /* Firefox 4 */
-
-  -webkit-transition: all 0.5s;
-  /* Safari and Chrome */
-
-  -o-transition: all 0.5s;
-  /* Opera */
-
+.logo {
+  opacity: 0.6;
+  -moz-opacity: 0.6;
+  filter: alpha(opacity=6);
 }
 .top-space {
   padding-top: 16px;
