@@ -10,7 +10,7 @@ body {
 
   .container {
     background: lighten(@gray, 65%);
-    padding: 12px;
+    padding: 12px 24px;
     margin-bottom: 20px;
     -webkit-box-shadow: 0px 0px 6px #999999;
     -moz-box-shadow: 0px 0px 6px #999999;
@@ -181,6 +181,16 @@ body {
     text-decoration: none;
     background: url(../img/pure/noise.png), -webkit-linear-gradient(top, lighten(@linkColor,10%), darken(@linkColor,15%));
   }
+  // in these cases the gradient won't cover the background, so we override
+  &:hover, &:active, &.active, &.disabled, &[disabled] {
+    background-color: @linkColor;
+  }
+
+  // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
+  &:active,
+  &.active {
+    background-color: darken(@linkColor, 15%) e("\9");
+  }
 }
 // Warning appears are orange
 .btn-warning {
@@ -194,6 +204,16 @@ body {
   &:hover {
     text-decoration: none;
     background: url(../img/pure/noise.png), -webkit-linear-gradient(top, lighten(@orange,10%), darken(@orange,15%));
+  }
+  // in these cases the gradient won't cover the background, so we override
+  &:hover, &:active, &.active, &.disabled, &[disabled] {
+    background-color: @orange;
+  }
+
+  // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
+  &:active,
+  &.active {
+    background-color: darken(@orange, 15%) e("\9");
   }
 }
 // Danger and error appear as red
@@ -209,6 +229,16 @@ body {
     text-decoration: none;
     background: url(../img/pure/noise.png), -webkit-linear-gradient(top, lighten(@red,10%), darken(@red,15%));
   }
+  // in these cases the gradient won't cover the background, so we override
+  &:hover, &:active, &.active, &.disabled, &[disabled] {
+    background-color: @red;
+  }
+
+  // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
+  &:active,
+  &.active {
+    background-color: darken(@red, 15%) e("\9");
+  }
 }
 // Success appears as green
 .btn-success {
@@ -222,6 +252,16 @@ body {
   &:hover {
     text-decoration: none;
     background: url(../img/pure/noise.png), -webkit-linear-gradient(top, lighten(@green,10%), darken(@green,15%));
+  }
+  // in these cases the gradient won't cover the background, so we override
+  &:hover, &:active, &.active, &.disabled, &[disabled] {
+    background-color: @green;
+  }
+
+  // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
+  &:active,
+  &.active {
+    background-color: darken(@green, 15%) e("\9");
   }
 }
 // Info appears as a neutral blue
@@ -237,6 +277,16 @@ body {
     text-decoration: none;
     background: url(../img/pure/noise.png), -webkit-linear-gradient(top, lighten(@blue,10%), darken(@blue,15%));
   }
+  // in these cases the gradient won't cover the background, so we override
+  &:hover, &:active, &.active, &.disabled, &[disabled] {
+    background-color: @blue;
+  }
+
+  // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
+  &:active,
+  &.active {
+    background-color: darken(@blue, 15%) e("\9");
+  }
 }
 // Inverse appears as dark gray
 .btn-inverse {
@@ -250,6 +300,16 @@ body {
   &:hover {
     text-decoration: none;
     background: url(../img/pure/noise.png), -webkit-linear-gradient(top, lighten(@grayDark,10%), darken(@grayDark,15%));
+  }
+  // in these cases the gradient won't cover the background, so we override
+  &:hover, &:active, &.active, &.disabled, &[disabled] {
+    background-color: @grayDark;
+  }
+
+  // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
+  &:active,
+  &.active {
+    background-color: darken(@grayDark, 15%) e("\9");
   }
 }
 
