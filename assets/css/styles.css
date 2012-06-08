@@ -837,10 +837,11 @@ div.switch {
   display: inline-block;
   margin: 5px 0 3px 0;
 }
-.coming-soon {
-  opacity: 0.6;
-  -moz-opacity: 0.6;
-  filter: alpha(opacity=6);
+.coming-soon small,
+.coming-soon a {
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  filter: alpha(opacity=5);
 }
 footer {
   color: #808080;
