@@ -686,7 +686,7 @@ div.switch {
     top: -50px;
   }
   to {
-    top: 0px;
+    top: -2px;
   }
 }
 .btn {
