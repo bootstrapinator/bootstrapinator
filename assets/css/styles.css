@@ -948,6 +948,10 @@ footer {
 .well .seventy-five.last {
   margin-left: 0;
 }
+.tagline {
+  font-size: 36px;
+  line-height: 42px;
+}
 .pull-right {
   float: right;
 }
